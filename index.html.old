@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Devon Walker</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="vendors/pagepiling/jquery.pagepiling.css">
+    <link rel="stylesheet" href="vendors/foundation/css/normalize.css">
+    <link rel="stylesheet" href="vendors/foundation/css/foundation.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="vendors/foundation/js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <div id="pagepiling">
+      <div class="section" id="page1">
+        <header>
+          <div>
+            <nav class="top-bar" data-topbar role="navigation">
+              <ul class="title-area">
+                <li class="name">
+                  <h1><a href="#">DW</a></h1>
+                </li>
+                <li class="toggle-topbar menu-icon">
+                  <a href="#"><span>Menu</span></a>
+                </li>
+              </ul>
+              <section class="top-bar-section">
+                <ul class="right">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </section>
+            </nav>
+          </div>
+        </header>
+        <section class="row">
+          <div class="large-6 columns">
+            <h1 class="lead_heading">Hello<br> I'm <strong>Devon</strong><br> Walker</h1>
+            <p style="margin-top:20px">Programmer, Coder, Software Engineer; a few words that describe what I am, but really I'm much more than that. I develop solutions to your technological problems.</p>
+            <div class="row" style="margin-top:50px">
+              <ul class="inline-list lead_options">
+                <div class="large-5 large-offset-1 columns">
+                  <li>                
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        class="left" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                      <g style="fill:white">
+                        <rect x="36" y="8" width="9" height="2"/>
+                        <rect x="19" y="16" width="26" height="2"/>
+                        <rect x="19" y="24" width="26" height="2"/>
+                        <path d="M54,0H10v21.142L0,25.335V64h64V25.335l-10-4.193V0z M52,2v29.716L32,44.253L12,31.716V2H52z M10,30.462l-6.835-4.285
+                          L10,23.311V30.462z M2,62V27.807l30,18.807l30-18.807V62H2z M60.835,26.177L54,30.462v-7.151L60.835,26.177z"/>
+                      </g>
+                    </svg>
+                    <strong class="left">Send A<br>Message</strong>
+                  </li>
+                </div>
+                <div class="large-5 columns">
+                  <li>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       class="left" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                      <g style="fill:white">
+                        <path d="M8,64h48V0H22.586L8,14.586V64z M54,62H10V16h14V2h30V62z M11.414,14L22,3.414V14H11.414z"/>
+                        <rect x="32" y="13" width="14" height="2"/>
+                        <rect x="18" y="23" width="28" height="2"/>
+                        <rect x="18" y="33" width="28" height="2"/>
+                        <rect x="18" y="43" width="28" height="2"/>
+                        <rect x="18" y="53" width="28" height="2"/>
+                      </g>
+                    </svg>
+                    <strong class="left">Download<br>Resume</strong>
+                  </li>
+                </div>
+                <div class="large-1 columns"></div>
+              </ul>
+            </div>
+          </div>
+          <div class="large-6 columns">
+            <img id="main-img" src="img/mac.png">
+          </div>
+        </section>
+          <div class="row">
+            <div class="text-center">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                <g style="fill:white">
+                  <polygon points="48.293,23.293 32,39.586 15.707,23.293 14.293,24.854 31.293,42 32.707,42 49.707,24.854  "/>
+                </g>
+              </svg>
+            </div>
+          </div>
+      </div>
+      <div class="section">
+        <section class="row">
+          <h2>I Wanna Be Like Kanye!</h2>
+        </section>
+      </div>
+      <div class="section" id="page2">
+        <section class="row">
+          <p class="text-center"><strong>Let's keep in touch!</strong><br> Contact me via email or say "Hi!" on any one of my social networks</p>
+          <div class="large-6 columns" style="padding-right:55px; border-right: gray 3px solid">
+            <form style="padding-left:50px">
+              <label for="name">Name:</label>
+              <input type="text" name="name">
+              <label for="email">Email:</label>
+              <input type="email" name="email">
+              <label>Message:
+                <textarea rows="5"></textarea>
+              </label>
+              <a href="#" class="button">Submit</a>
+            </form>
+          </div>
+          <div class="large-6 columns" style="padding-left:55px">
+            <ul class="small-block-grid-3" style="padding-right:100px">
+              <li><img width="96px" src="img/outline_icons/Facebook.svg"></li>
+              <li><img width="96px" src="img/outline_icons/Twitter.svg"></li>
+              <li><img width="96px" src="img/outline_icons/GooglePlus.svg"></li>
+              <li><img width="96px" src="img/outline_icons/LinkedIn.svg"></li>
+              <!--<li><img width="96px" src="img/outline_icons/Github.svg"></li>-->
+            </ul>
+          </div>
+        </section>
+        <footer id="main-footer">
+          <span>copyright 2014</span>
+        </footer>
+      </div>
+    </div>
+    <script src="vendors/foundation/js/vendor/jquery.js"></script>
+    <script src="vendors/pagepiling/jquery.pagepiling.min.js"></script>
+    <script src="vendors/foundation/js/foundation.min.js"></script>
+    <script>
+      $(document)
+        .ready(function() {
+          $('#pagepiling').pagepiling({
+            sectionsColor: ['#39C', 'white', '#2C3E50', '#ee005a']
+          });
+        })
+        .foundation();
+    </script>
+  </body>
+</html>
