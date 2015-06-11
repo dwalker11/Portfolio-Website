@@ -18,5 +18,11 @@
     "vendors",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "animate.css": "~3.3.0",
+    "chartjs": "~1.0.2",
+    "skrollr": "~0.6.29",
+    "foundation": "~5.5.2"
+  }
 }
