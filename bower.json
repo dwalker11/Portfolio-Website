@@ -1,0 +1,22 @@
+{
+  "name": "professional_site",
+  "version": "1.0.1",
+  "authors": [
+    "Devon Walker <devon.dana@gmail.com>"
+  ],
+  "description": "A portfolio site for myself",
+  "main": "index.html",
+  "keywords": [
+    "static"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.devonwalker.me/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendors",
+    "test",
+    "tests"
+  ]
+}
