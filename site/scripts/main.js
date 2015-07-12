@@ -59,13 +59,6 @@ var chartExp = function(obj){
     return false;
 };
 
-var s = skrollr.init({
-    render: function(data) {
-        //Debugging - Log the current scroll position.
-        //console.log(data.curTop);
-    }
-});
-
 var scrollToTop = function() {
     $('html, body').animate({scrollTop: 0}, 'slow');
     return false;
