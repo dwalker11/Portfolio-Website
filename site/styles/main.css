@@ -260,9 +260,10 @@ small {
 	border-radius: 50%;
     position: fixed;
     bottom: 100px;
-    right: 17px;
+    right: 60px;
     width: 64px;
     z-index: 9;
+    display: none;
 }
 
 /* Utility classes */

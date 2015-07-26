@@ -29,6 +29,7 @@ var data = [
 ];
 
 var navigation = $("header > div.fixed");
+var scrollBtn  = $("#back_to_top");
 var ctx        = $("#myChart").get(0).getContext("2d");
 var expChart   = new Chart(ctx).Doughnut(data, {percentageInnerCutout: 75});
 
@@ -69,13 +70,30 @@ var scrollToBottom = function() {
     return false;
 };
 
-window.addEventListener('scroll', function(e){
-    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-        shrinkOn  = 190;
+var expandContractHeader = function(distanceY, shrinkOn){
+    var shrinkOn = 190;
 
     if (distanceY > shrinkOn && navigation.has("large")) {
         navigation.removeClass("large");
     } else {
         navigation.addClass("large");
     }
+};
+
+var hideOrShowButton = function(distanceY){
+    var showDistance = 1000,
+        hideDistance = 300;
+
+    if (distanceY > showDistance) {
+        scrollBtn.show().removeClass("fadeOutDown").addClass("animated fadeInUp")
+    } else if (distanceY < hideDistance) {
+        scrollBtn.removeClass("fadeInUp").addClass("animated fadeOutDown")
+    }
+};
+
+window.addEventListener('scroll', function(e){
+    var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+
+    expandContractHeader(distanceY);
+    hideOrShowButton(distanceY);
 });
