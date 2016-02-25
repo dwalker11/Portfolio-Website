@@ -1,11 +1,12 @@
 {
-  "name": "professional_site",
+  "name": "portfolio-site",
+  "private": true,
   "version": "1.0.1",
   "authors": [
     "Devon Walker <devon.dana@gmail.com>"
   ],
   "description": "A portfolio site for myself",
-  "main": "index.html",
+  "main": "app/index.html",
   "keywords": [
     "static"
   ],
@@ -20,9 +21,11 @@
     "tests"
   ],
   "dependencies": {
-    "animate.css": "~3.3.0",
-    "chartjs": "~1.0.2",
-    "skrollr": "~0.6.29",
-    "foundation": "~5.5.2"
+    "jquery": "~1.11.1",
+    "modernizr": "~2.8.2",
+    "animate.css": "~3.5.1",
+    "Chart.js": "chartjs#~1.0.2",
+    "skrollr": "~0.6.30",
+    "foundation": "~5.5.3"
   }
 }
