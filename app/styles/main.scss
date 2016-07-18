@@ -13,12 +13,12 @@
 }
 
 /* Override the nav bar */
-form input[type="text"], form input[type="email"], form textarea {
+form.contact input, form.contact textarea {
 	background-color: transparent;
 	color: rgb(255,255,255);
 }
 
-form input[type="text"]:focus, form input[type="email"]:focus, form textarea:focus {
+form.contact input:focus, form.contact textarea:focus {
 	background-color: rgb(49,49,49);
 	box-shadow: 0 0 5px rgb(101,101,101);
 }
