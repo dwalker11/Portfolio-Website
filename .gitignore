@@ -1,12 +1,10 @@
-node_modules
-dist
-.tmp
 .sass-cache
-bower_components
+.tmp
 .vagrant
-vendor
+bower_components
+dist
 composer*
 Homestead.yaml
-app/fonts/
-app/images/
+node_modules
 Vagrantfile
+vendor
