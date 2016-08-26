@@ -21,7 +21,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~1.11.1",
+    "jquery": "<3.0.0",
     "modernizr": "~2.8.2",
     "animate.css": "~3.5.1",
     "Chart.js": "chartjs#~1.0.2",
