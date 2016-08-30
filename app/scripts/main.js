@@ -3,6 +3,7 @@
 
 $(document).foundation();
 
+// Chart section
 var experience = {
     html: 36,
     css: 36,
@@ -30,10 +31,8 @@ var data = [
     }
 ];
 
-var navigation = $('header > div.fixed');
-var scrollBtn  = $('#back_to_top');
-var ctx        = $('#myChart').get(0).getContext('2d');
-var expChart   = new Chart(ctx).Doughnut(data, {percentageInnerCutout: 75});
+var ctx      = $('#myChart').get(0).getContext('2d');
+var expChart = new Chart(ctx).Doughnut(data, {percentageInnerCutout: 75});
 
 var chartExp = function(obj){
     var lang    = $(obj).data('lang');
@@ -62,6 +61,7 @@ var chartExp = function(obj){
     return false;
 };
 
+// Page helpers
 var scrollToTop = function() {
     $('html, body').animate({scrollTop: 0}, 'slow');
     return false;
@@ -71,6 +71,10 @@ var scrollToBottom = function() {
     $('html, body').animate({scrollTop: $(document).height()}, 'slow');
     return false;
 };
+
+// Navigation behavior
+var navigation = $('header > div.fixed');
+var scrollBtn  = $('#back_to_top');
 
 var expandContractHeader = function(distanceY, shrinkOn){
     shrinkOn = 190;
@@ -93,9 +97,30 @@ var hideOrShowButton = function(distanceY){
     }
 };
 
-window.addEventListener('scroll', function(){
+$(window).on('scroll', function(){
     var distanceY = window.pageYOffset || document.documentElement.scrollTop;
 
     expandContractHeader(distanceY);
     hideOrShowButton(distanceY);
+});
+
+// Form submission
+$('#message-submit').on('click', function(e){
+    e.preventDefault();
+
+    var url  = 'backend/processor.php';
+
+    var data = {
+        name: $('#message-name').val(),
+        email: $('#message-email').val(),
+        message: $('#message-body').val()
+    };
+
+    $.post(url, data)
+        .success(function(){
+            swal("Good job!", "You clicked the button!", "success")
+        })
+        .fail(function(){
+            swal("Oops...", "Something went wrong!", "error");
+        });
 });
