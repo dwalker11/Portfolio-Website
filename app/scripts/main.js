@@ -118,9 +118,9 @@ $('#message-submit').on('click', function(e){
 
     $.post(url, data)
         .success(function(){
-            swal("Good job!", "You clicked the button!", "success")
+            swal("Thanks!", "Your message has been received.", "success")
         })
         .fail(function(){
-            swal("Oops...", "Something went wrong!", "error");
+            swal("Oh no...", "Something went wrong!", "error");
         });
 });
