@@ -1,6 +1,6 @@
 <?php
 
-require 'vendor/autoload.php'
+require 'vendor/autoload.php';
 
 $name    = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 $email   = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
