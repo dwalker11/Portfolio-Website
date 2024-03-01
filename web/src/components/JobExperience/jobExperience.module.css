@@ -1,0 +1,12 @@
+.list-horizontal li {
+  display: inline-block;
+}
+.list-horizontal li:before {
+  content: "⬤";
+  color: #0284c7;
+  font-size: 6px;
+  vertical-align: middle;
+}
+.list-horizontal li:first-child:before {
+  content: "";
+}

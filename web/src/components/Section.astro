@@ -1,0 +1,31 @@
+---
+export interface Props {
+  className: string;
+  title?: string;
+}
+
+const { className, title } = Astro.props;
+---
+
+<section class={className}>
+  <div class="flex">
+    {
+      title ? (
+        <h3 class="font-bold tracking-tighter uppercase text-sky-600 text-xl pr-1">
+          {title}
+        </h3>
+      ) : null
+    }
+    <div class="separator w-full">&nbsp;</div>
+  </div>
+  <slot />
+</section>
+
+<style>
+  .separator {
+    background-image: url("/more_horiz.png");
+    background-repeat: repeat-x;
+    background-position: 0% 200%;
+    background-size: 24px;
+  }
+</style>
