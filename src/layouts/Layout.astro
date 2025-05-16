@@ -1,0 +1,39 @@
+---
+import { SEO } from "astro-seo";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar/Navbar.astro";
+import "../styles/global.css";
+import "@fontsource-variable/inter";
+
+const { title } = Astro.props;
+
+const makeTitle = title ? title + " | " + "DW" : "DW - Software Engineer";
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <SEO
+      title={makeTitle}
+      description="A portfolio website for Devon Walker - Software Engineer"
+      canonical={canonicalURL}
+    />
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <Footer />
+    <style is:global>
+      /* Improve Page speed */
+      /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
+      img {
+        content-visibility: auto;
+      }
+    </style>
+  </body>
+</html>

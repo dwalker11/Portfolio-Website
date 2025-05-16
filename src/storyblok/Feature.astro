@@ -1,0 +1,16 @@
+---
+import { storyblokEditable } from "@storyblok/astro";
+import { Icon } from "astro-icon/components";
+
+const { blok } = Astro.props;
+---
+
+<div {...storyblokEditable(blok)} class="flex gap-4 items-start">
+  <div class="mt-1 bg-black rounded-full p-2 shrink-0">
+    <Icon class="text-white text-xl" name={blok.icon} />
+  </div>
+  <div>
+    <h3 class="font-semibold text-lg">{blok.title}</h3>{" "}
+    <p class="text-slate-500 mt-2 leading-relaxed">{blok.description}</p>
+  </div>
+</div>
