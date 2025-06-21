@@ -3,7 +3,7 @@
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import Dropdown from "./Dropdown.astro";
 import Container from "../Container.astro";
-// import Link from "@components/UI/link.astro";
+import Link from "../UI/Link.astro";
 
 const menuitems: any[] = [
   // {
@@ -80,6 +80,22 @@ const menuitems: any[] = [
               </>
             ))
           }
+          <li>
+            <a
+              href="https://github.com/dwalker11"
+              target="_blank"
+              class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/dwalker11"
+              target="_blank"
+              class="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900">
+              LinkedIn
+            </a>
+          </li>
         </ul>
         <!-- <div class="lg:hidden flex items-center mt-3 gap-4"> -->
         <!-- <Link href="#" style="muted" block size="md">Log in</Link> -->
