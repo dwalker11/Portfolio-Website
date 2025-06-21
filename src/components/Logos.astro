@@ -1,23 +1,45 @@
 ---
 import { Icon } from "astro-icon/components";
+
+const technologies = [
+  { name: "googlecloud", label: "Google Cloud" },
+  { name: "docker", label: "Docker" },
+  { name: "php", label: "PHP" },
+  { name: "laravel", label: "Laravel" },
+  { name: "ruby", label: "Ruby" },
+  { name: "rubyonrails", label: "Ruby on Rails" },
+  { name: "redis", label: "Redis" },
+  { name: "postgresql", label: "PostgreSQL" },
+  { name: "javascript", label: "JavaScript" },
+  { name: "typescript", label: "TypeScript" },
+  { name: "nodedotjs", label: "Node.js" },
+  { name: "react", label: "React" },
+  { name: "redux", label: "Redux" },
+  { name: "reactivex", label: "RxJS" },
+];
 ---
 
 <div class="mt-24">
   <h2 class="text-center text-slate-500">I work with your technologies</h2>
   <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
-    <Icon class="text-5xl" name="simple-icons:googlecloud" />
-    <Icon class="text-5xl" name="simple-icons:docker" />
-    <Icon class="text-5xl" name="simple-icons:php" />
-    <Icon class="text-5xl" name="simple-icons:laravel" />
-    <Icon class="text-5xl" name="simple-icons:ruby" />
-    <Icon class="text-5xl" name="simple-icons:rubyonrails" />
-    <Icon class="text-5xl" name="simple-icons:redis" />
-    <Icon class="text-5xl" name="simple-icons:postgresql" />
-    <Icon class="text-5xl" name="simple-icons:javascript" />
-    <Icon class="text-5xl" name="simple-icons:typescript" />
-    <Icon class="text-5xl" name="simple-icons:nodedotjs" />
-    <Icon class="text-5xl" name="simple-icons:react" />
-    <Icon class="text-5xl" name="simple-icons:redux" />
-    <Icon class="text-5xl" name="simple-icons:reactivex" />
+    {
+      technologies.map((tech) => (
+        <Icon
+          class="text-5xl"
+          name={`simple-icons:${tech.name}`}
+          data-tippy-content={tech.label}
+        />
+      ))
+    }
   </div>
 </div>
+
+<script>
+  import tippy from "tippy.js";
+  import "tippy.js/dist/tippy.css"; // required for styling
+  import "tippy.js/animations/scale.css"; // optional animation
+
+  tippy("[data-tippy-content]", {
+    animation: "scale",
+  });
+</script>
