@@ -6,6 +6,10 @@ import heroImage from "../assets/hero.png";
 import Link from "../components/UI/Link.astro";
 
 const { blok } = Astro.props;
+
+const position = blok.position.length
+  ? `a ${blok.position}`
+  : "building the next chapter in my career";
 ---
 
 <main
@@ -27,7 +31,7 @@ const { blok } = Astro.props;
       {blok.heading}
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      {blok.subheading}
+      {blok.subheading}. I'm currently {position}.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <!-- <Link class="flex gap-1 items-center justify-center" href="/contact">
